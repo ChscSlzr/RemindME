@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>View Appointments</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-avatar>
+        <ion-icon name="person-circle-outline"></ion-icon>
+      </ion-avatar>
+      <ion-label>
+        <h1>Leonardo De Caprio</h1>
+        <p>You have appointment today!</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Taping</ion-card-title>
+    </ion-card-header>
+    <ion-card-contents>
+      <ion-items lines="nones">
+        <ion-icon name="alarm" slot="start" color="warning"> </ion-icon>
+        <p>Taping a new version of titanic</p>
+        <p>14/5/2022  12:00pm</p>
+      </ion-items>
+      <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button color="secondary">
+          <ion-icon name="pencil"  (click)="update()"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+    </ion-card-contents>
+  </ion-card>
+
+  <ion-list>
+    <ion-item>
+      <ion-avatar>
+        <ion-icon name="person-circle-outline"></ion-icon>
+      </ion-avatar>
+      <ion-label>
+        <h1>Enrique Hill</h1>
+        <p>You have appointment today!</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Dance competition</ion-card-title>
+    </ion-card-header>
+    <ion-card-contents>
+      <ion-items lines="nones">
+        <ion-icon name="alarm" slot="start" color="warning"> </ion-icon>
+        <p>Dance competition in underground manila</p>
+        <p>24/5/2022  9:00pm</p>
+      </ion-items>
+      <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button color="secondary">
+          <ion-icon name="pencil" (click)="update()"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+    </ion-card-contents>
+  </ion-card>
+</ion-content>

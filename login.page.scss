@@ -1,0 +1,10 @@
+ion-button[color="secondary"]
+{
+    text-transform: initial;
+
+}
+
+ion-content
+{
+  --background: var(--ion-color-secondary);
+}

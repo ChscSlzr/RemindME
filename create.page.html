@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Add Appoinment</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header> <ion-card-title>RemindME</ion-card-title></ion-card-header>
+      <ion-card-content>
+        <div> <app-created> </app-created></div>
+          <ion-item>
+            <ion-label position="floating">Subject</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+        
+        <ion-item>
+          <ion-label position="floating">Short description</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Location</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Date</ion-label>
+          <ion-input type="date"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Time</ion-label>
+          <ion-input type="time"></ion-input>
+        </ion-item>
+        <!-- <ion-item>
+          <ion-label position="floating">Ringtone</ion-label>
+          <ion-input type="music"></ion-input>
+        </ion-item> -->
+      </ion-card-content>
+  </ion-card>
+  <ion-button size="full" color="secondary" (click)="view()">
+    Add
+  </ion-button>
+</ion-content>

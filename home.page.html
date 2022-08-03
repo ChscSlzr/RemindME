@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>RemindMe</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-avatar>
+        <ion-icon name="person-circle-outline"></ion-icon>
+      </ion-avatar>
+      <ion-label>
+        <h1>Leonardo De Caprio</h1>
+        <p>You have appointment today!</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Taping</ion-card-title>
+    </ion-card-header>
+    <ion-card-contents>
+      <ion-items lines="nones">
+        <ion-icon name="alarm" slot="start" color="warning"> </ion-icon>
+        <ion-button color="dark" fill= "clear" (click)="viewDetails()"> View details </ion-button>
+        <p>14/5/2022  12:00pm</p>
+      </ion-items>
+    </ion-card-contents>
+  </ion-card>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="secondary">
+      <ion-icon name="add"(click)="add()"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
